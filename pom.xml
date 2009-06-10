@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>images</groupId>
+	<artifactId>images</artifactId>
+	<name>images</name>
+	<version>0.1</version>
+	<description>
+		Common API for manipulating images inside and out of Google App Engine
+	</description>
+
+	<licenses>
+		<license>
+			<name>Apache 2</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>Apache License 2.0</comments>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>gimenete</id>
+			<name>Alberto Gimeno</name>
+			<email>gimenete at gmail.com</email>
+			<roles>
+				<role>Architect</role>
+				<role>Manager</role>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<build>
+		<finalName>images</finalName>
+		<plugins>
+			<!-- Compiler settings -->
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+	<repositories>
+		<repository>
+			<id>repo1</id>
+			<name>Maven Central Repository</name>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
+		<repository>
+			<id>java.net</id>
+			<url>http://download.java.net/maven/2</url>
+		</repository>
+		<repository>
+			<id>ibiblio.org</id>
+			<name>
+				ibiblio Mirror of http://repo1.maven.org/maven2/
+			</name>
+			<url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
+		</repository>
+	</repositories>
+
+
+
+	<dependencies>
+        <!-- Google App Engine Dependencies -->
+		<dependency>
+			<groupId>com.google</groupId>
+			<artifactId>appengine-tools</artifactId>
+			<version>1.2.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google</groupId>
+			<artifactId>appengine-local-runtime-shared</artifactId>
+			<version>1.2.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google</groupId>
+			<artifactId>appengine-sdk-1.2.1-api</artifactId>
+			<version>1.2.1</version>
+			<scope>compile</scope>
+		</dependency>
+
+	</dependencies>
+
+</project>
